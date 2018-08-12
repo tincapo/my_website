@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px "Monaco", Inconsolata, monospace;
+  color: antiquewhite;
+  background-color: #002833;
+}
+
+.terminal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  filter: blur(1px);
+}
+
+.dollar {
+  margin-right: 5px;
+  color: #52a563;
+}
+
+.cursor-blink {
+  position: absolute;
+  background-color: #b6b6b6;
+  vertical-align: top;
+  width: 10px;
+  height: 21px;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
